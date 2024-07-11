@@ -11,7 +11,7 @@ module.exports = async (request, response) => {
     blockchain.addPeer(request.headers.host);
 
     let output;
-
+    
     switch (route) {
         case "/new_block":
             output = blockchain.newBlock();
